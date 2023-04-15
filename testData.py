@@ -37,16 +37,16 @@ def makeFlightIdentifier(root):
 def makeDeparture(root):
     node = Element("departure")
 
-    makeAirport(node)
+    makeVertiport(node)
     makePlannedDepatureTime(node)
     
     root.append(node)
 
 
-def makeAirport(node):
-    node2 = Element("uamPort")
-
-    SubElement(node2, "uamPortIATA").text = "LAX"
+def makeVertiport(node):
+    node2 = Element("vertiport")
+    
+    makeLocation(node2)
 
     node.append(node2)
 
@@ -63,7 +63,7 @@ def makePlannedDepatureTime(node):
 def makeArrival(root):
     node = Element("arrival")
 
-    makeAirport(node)
+    makeVertiport(node)
     makePlannedDepatureTime(node)
 
     root.append(node)
@@ -82,11 +82,17 @@ def makeWayPoint(node):
     node2 = Element("waypoint")
 
     waypointLocation = SubElement(node2, "waypointLocation")
-    location = SubElement(waypointLocation, "location")
-    SubElement(location, "longitude").text = "126.9525465"
-    SubElement(location, "latitude").text = "37.5453577"
+    makeLocation(waypointLocation)
 
-    node.append(node2)
+    node.append(waypointLocation)
+
+def makeLocation(node):
+    location_node = Element("location")
+
+    SubElement(location_node, "longitude").text = "126.9525465"
+    SubElement(location_node, "latitude").text = "37.5453577"
+
+    node.append(location_node)
 
 def makeUamIdentifier(node):
     node2 = Element("uamIdentification")
@@ -98,7 +104,8 @@ def makeUamIdentifier(node):
 
 def makeFixmXmlFile():
     root = makeFlight()
-    ElementTree(root).write("FixmTestData.xml")
+
+    ElementTree(root).write("FixmTestData/FixmTestData.xml")
 
 
 if __name__ == "__main__":   
