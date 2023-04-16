@@ -2,6 +2,11 @@
   <flightIdentifier>
     <uamIdentification>UAL123</uamIdentification>
   </flightIdentifier>
+  <currentTime>
+    <Date>111</Date>
+    <Time>222</Time>
+    <TimeReference>333</TimeReference>
+  </currentTime>
   <currentPosition>
     <location>
       <longitude>126.9525465</longitude>

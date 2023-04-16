@@ -26,6 +26,7 @@ def makeUAM():
     root = Element("UAM")
     
     makeFlightIdentifier(root)
+    makeCurrentTime(root)
     makeCurrentPosition(root)
     indent(root)
     dump(root)
@@ -45,6 +46,14 @@ def makeUAMIdentifier(node):
     node2.text = "UAL123"
 
     node.append(node2)
+
+
+def makeCurrentTime(root):
+    node = SubElement(root, "currentTime")
+
+    SubElement(node, "Date").text = "111"
+    SubElement(node, "Time").text = "222"
+    SubElement(node, "TimeReference").text = "333"
 
 
 def makeCurrentPosition(root):
