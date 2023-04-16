@@ -1,0 +1,11 @@
+<UAM>
+  <flightIdentifier>
+    <uamIdentification>UAL123</uamIdentification>
+  </flightIdentifier>
+  <currentPosition>
+    <location>
+      <longitude>126.9525465</longitude>
+      <latitude>37.5453577</latitude>
+    </location>
+  </currentPosition>
+</UAM>
