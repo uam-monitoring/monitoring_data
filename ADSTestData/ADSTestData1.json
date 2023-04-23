@@ -1,0 +1,17 @@
+{
+    "flightIdentifier": {
+        "uamIdentification": "UAL123"
+    },
+    "currentTime": {
+        "date": "111",
+        "time": "222",
+        "timeReference": "333"
+    },
+    "currentPosition": {
+        "location": {
+            "altitude": "400",
+            "longitude": "126.9525465",
+            "latitude": "37.5453577"
+        }
+    }
+}
