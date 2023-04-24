@@ -1,0 +1,61 @@
+{
+    "flightIdentifier": {
+        "uamIdentification": "UAL123"
+    },
+    "departure": {
+        "vertiport": {
+            "location": {
+                "longitude": "126.9525465",
+                "latitude": "37.5453577"
+            }
+        },
+        "plannedDepatureTime": {
+            "date": "dd",
+            "time": "tt",
+            "timeReference": "UTC"
+        }
+    },
+    "arrival": {
+        "vertiport": {
+            "location": {
+                "longitude": "126.9525465",
+                "latitude": "37.5453577"
+            }
+        },
+        "plannedDepatureTime": {
+            "date": "dd",
+            "time": "tt",
+            "timeReference": "UTC"
+        }
+    },
+    "route": {
+        "firstWaypointLocation": {
+            "location": {
+                "altitude": "100",
+                "longitude": "126.9525465",
+                "latitude": "37.5453577"
+            }
+        },
+        "secondWaypointLocation": {
+            "location": {
+                "altitude": "200",
+                "longitude": "126.9525465",
+                "latitude": "37.5453577"
+            }
+        },
+        "thirdWaypointLocation": {
+            "location": {
+                "altitude": "300",
+                "longitude": "126.9525465",
+                "latitude": "37.5453577"
+            }
+        },
+        "fourthWaypointLocation": {
+            "location": {
+                "altitude": "400",
+                "longitude": "126.9525465",
+                "latitude": "37.5453577"
+            }
+        }
+    }
+}
