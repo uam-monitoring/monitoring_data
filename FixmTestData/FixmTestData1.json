@@ -5,8 +5,8 @@
     "departure": {
         "vertiport": {
             "location": {
-                "longitude": "126.9525465",
-                "latitude": "37.5453577"
+                "longitude": 128.606638,
+                "latitude": 35.887983
             }
         },
         "plannedDepatureTime": {
@@ -18,8 +18,8 @@
     "arrival": {
         "vertiport": {
             "location": {
-                "longitude": "126.9525465",
-                "latitude": "37.5453577"
+                "longitude": 128.61375,
+                "latitude": 35.828633
             }
         },
         "plannedDepatureTime": {
@@ -28,34 +28,54 @@
             "timeReference": "UTC"
         }
     },
-    "route": {
-        "firstWaypointLocation": {
-            "location": {
-                "altitude": "100",
-                "longitude": "126.9525465",
-                "latitude": "37.5453577"
-            }
+    "route": [
+        {
+            "longitude": 128.6071850769231,
+            "latitude": 35.883417615384616
         },
-        "secondWaypointLocation": {
-            "location": {
-                "altitude": "200",
-                "longitude": "126.9525465",
-                "latitude": "37.5453577"
-            }
+        {
+            "longitude": 128.60773215384617,
+            "latitude": 35.87885223076923
         },
-        "thirdWaypointLocation": {
-            "location": {
-                "altitude": "300",
-                "longitude": "126.9525465",
-                "latitude": "37.5453577"
-            }
+        {
+            "longitude": 128.60827923076923,
+            "latitude": 35.874286846153844
         },
-        "fourthWaypointLocation": {
-            "location": {
-                "altitude": "400",
-                "longitude": "126.9525465",
-                "latitude": "37.5453577"
-            }
+        {
+            "longitude": 128.6088263076923,
+            "latitude": 35.86972146153846
+        },
+        {
+            "longitude": 128.6093733846154,
+            "latitude": 35.86515607692308
+        },
+        {
+            "longitude": 128.60992046153848,
+            "latitude": 35.860590692307696
+        },
+        {
+            "longitude": 128.61046753846153,
+            "latitude": 35.856025307692306
+        },
+        {
+            "longitude": 128.61101461538462,
+            "latitude": 35.85145992307692
+        },
+        {
+            "longitude": 128.6115616923077,
+            "latitude": 35.84689453846154
+        },
+        {
+            "longitude": 128.6121087692308,
+            "latitude": 35.84232915384616
+        },
+        {
+            "longitude": 128.61265584615384,
+            "latitude": 35.83776376923077
+        },
+        {
+            "longitude": 128.61320292307693,
+            "latitude": 35.833198384615386
         }
-    }
+    ]
 }
