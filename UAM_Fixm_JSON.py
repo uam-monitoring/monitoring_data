@@ -55,20 +55,11 @@ def get_waypoints(departure, arrival):
 
     div = distance // 500
 
-    lat_unit = abs(departure[0] - arrival[0]) / div
-    lon_unit = abs(departure[1] - arrival[1]) / div
+    lat_unit = (departure[0] - arrival[0]) / div
+    lon_unit = (departure[1] - arrival[1]) / div
 
     for mul in range(1, int(div)):
-        if departure[0] > arrival[0]:
-            if departure[1] > arrival[1]:
-                waypoints.append((departure[0] - lat_unit * mul, departure[1] - lon_unit * mul))
-            else:
-                waypoints.append((departure[0] - lat_unit * mul, departure[1] + lon_unit * mul))
-        else:
-            if departure[1] > arrival[1]:
-                waypoints.append((departure[0] + lat_unit * mul, departure[1] - lon_unit * mul))
-            else:
-                waypoints.append((departure[0] + lat_unit * mul, departure[1] + lon_unit * mul))
+        waypoints.append((departure[0] - lat_unit * mul, departure[1] - lon_unit * mul))
     
     return waypoints
 
