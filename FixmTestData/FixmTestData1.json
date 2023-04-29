@@ -4,27 +4,23 @@
     },
     "departure": {
         "vertiport": {
-            "location": {
-                "longitude": 128.606638,
-                "latitude": 35.887983
-            }
+            "longitude": 128.606638,
+            "latitude": 35.887983
         },
         "plannedDepatureTime": {
-            "date": "dd",
-            "time": "tt",
+            "date": "2023-05-15",
+            "time": "14:00:00",
             "timeReference": "UTC"
         }
     },
     "arrival": {
         "vertiport": {
-            "location": {
-                "longitude": 128.61375,
-                "latitude": 35.828633
-            }
+            "longitude": 128.61375,
+            "latitude": 35.828633
         },
         "plannedDepatureTime": {
-            "date": "dd",
-            "time": "tt",
+            "date": "2023-05-15",
+            "time": "14:30:00",
             "timeReference": "UTC"
         }
     },

@@ -13,10 +13,8 @@ def make_UAM_FIXM_JSON(idx,
         },
         "departure" : {
             "vertiport" : {
-                "location" : {
-                    "longitude" : departure[1],
-                    "latitude" : departure[0]
-                }
+                "longitude" : departure[1],
+                "latitude" : departure[0]
             },
             "plannedDepatureTime" : {
                 "date" : departure_planned_date,
@@ -26,10 +24,8 @@ def make_UAM_FIXM_JSON(idx,
         },
         "arrival" : {
             "vertiport" : {
-                "location" : {
-                    "longitude" : arrival[1],
-                    "latitude" : arrival[0]
-                }
+                "longitude" : arrival[1],
+                "latitude" : arrival[0]
             },
             "plannedDepatureTime" : {
                 "date" : arrival_planned_date,
@@ -73,6 +69,6 @@ if __name__ == "__main__":
 
     make_UAM_FIXM_JSON(idx = 1,
                        uamIdentification = "UAL123",
-                       departure = departure, departure_planned_date = "dd", departure_planned_time = "tt",
-                       arrival = arrival, arrival_planned_date = "dd", arrival_planned_time = "tt",
+                       departure = departure, departure_planned_date = "2023-05-15", departure_planned_time = "14:00:00",
+                       arrival = arrival, arrival_planned_date = "2023-05-15", arrival_planned_time = "14:30:00",
                        waypoints = waypoints)
