@@ -12,11 +12,9 @@ def make_UAM_ADSB_JSON(idx, uamIdentification, date, time, timeReference, altitu
             "timeReference" : timeReference
         },
         "currentPosition" : {
-            "location" : {
-                "altitude" : altitude,
-                "longitude" : longitude,
-                "latitude" : latitude
-            }
+            "altitude" : altitude,
+            "longitude" : longitude,
+            "latitude" : latitude
         }
     }
 
@@ -29,9 +27,9 @@ if __name__ == "__main__":
     make_UAM_ADSB_JSON(
         idx = "1",
         uamIdentification = "UAL123",
-        date = "111",
-        time = "222",
-        timeReference = "333",
+        date = "2025-05-25",
+        time = "14:12:00",
+        timeReference = "UTC",
         altitude = "400",
         longitude = "126.9525465",
         latitude = "37.5453577"
