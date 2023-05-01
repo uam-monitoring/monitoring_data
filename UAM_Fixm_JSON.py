@@ -48,6 +48,8 @@ def make_UAM_FIXM_JSON(idx,
 def get_waypoints(departure, arrival):
     waypoints = []
     distance = haversine(departure, arrival, unit = "m")
+    print(distance)
+    print(distance / 80000 * 60)
 
     div = distance // 500
 
@@ -62,13 +64,13 @@ def get_waypoints(departure, arrival):
 
 if __name__ == "__main__":
     
-    departure = (35.887983, 128.606638)
-    arrival = (35.828633, 128.613750)
+    departure = (35.853643, 128.487830)
+    arrival = (35.818792, 128.538491)
 
     waypoints = get_waypoints(departure, arrival)
 
     make_UAM_FIXM_JSON(idx = 1,
-                       uamIdentification = "UAL123",
+                       uamIdentification = "BKDG001",
                        departure = departure, departure_planned_date = "2023-05-15", departure_planned_time = "14:00:00",
                        arrival = arrival, arrival_planned_date = "2023-05-15", arrival_planned_time = "14:30:00",
                        waypoints = waypoints)
