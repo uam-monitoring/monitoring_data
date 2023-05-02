@@ -16,7 +16,7 @@ def make_UAM_FIXM_JSON(idx,
                 "longitude" : departure[1],
                 "latitude" : departure[0]
             },
-            "plannedDepatureTime" : {
+            "plannedDepartureTime" : {
                 "date" : departure_planned_date,
                 "time" : departure_planned_time,
                 "timeReference" : "UTC"
@@ -27,7 +27,7 @@ def make_UAM_FIXM_JSON(idx,
                 "longitude" : arrival[1],
                 "latitude" : arrival[0]
             },
-            "plannedDepatureTime" : {
+            "plannedArrivalTime" : {
                 "date" : arrival_planned_date,
                 "time" : arrival_planned_time,
                 "timeReference" : "UTC"

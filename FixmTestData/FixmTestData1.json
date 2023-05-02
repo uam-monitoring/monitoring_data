@@ -7,7 +7,7 @@
             "longitude": 128.48783,
             "latitude": 35.853643
         },
-        "plannedDepatureTime": {
+        "plannedDepartureTime": {
             "date": "2023-05-15",
             "time": "14:00:00",
             "timeReference": "UTC"
@@ -18,7 +18,7 @@
             "longitude": 128.538491,
             "latitude": 35.818792
         },
-        "plannedDepatureTime": {
+        "plannedArrivalTime": {
             "date": "2023-05-15",
             "time": "14:30:00",
             "timeReference": "UTC"
