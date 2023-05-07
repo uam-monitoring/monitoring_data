@@ -19,7 +19,7 @@ def make_UAM_ADSB_JSON(idx, uamIdentification, date, time, timeReference, altitu
         }
     }
 
-    with open('ADSTestData/ADSTestData{num}.json'.format(num=idx), 'w') as f:
+    with open('ADS_Data/ADS01/ADS01_{num}.json'.format(num=idx), 'w') as f:
         json.dump(UAM_ADSB, f, indent=4)
 
 
