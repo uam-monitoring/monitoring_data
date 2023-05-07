@@ -4,12 +4,12 @@
     },
     "currentTime": {
         "date": "2025-05-25",
-        "time": "14:0:5",
+        "time": "14:1:30",
         "timeReference": "UTC"
     },
     "currentPosition": {
         "altitude": 300,
-        "longitude": 128.60763885714286,
-        "latitude": 35.88757128571429
+        "longitude": 128.62465342857143,
+        "latitude": 35.88057214285714
     }
 }
