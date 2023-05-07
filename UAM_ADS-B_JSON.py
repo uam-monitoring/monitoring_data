@@ -52,7 +52,7 @@ if __name__ == "__main__":
             idx = str(idx),
             uamIdentification = "BKDG001",
             date = "2025-05-25",
-            time = "14:{min}:{sec}".format(min = idx // 12, sec = idx * 5 % 60),
+            time = "14:{min:02d}:{sec:02d}".format(min = idx // 12, sec = idx * 5 % 60),
             timeReference = "UTC",
             altitude = 300,
             longitude = point[1],
