@@ -42,13 +42,18 @@ def get_waypoints(departure, arrival):
 
 if __name__ == "__main__":
     
-    departure = (35.818792, 128.538491)
-    arrival = (35.887983, 128.606638)
+    departure = (35.853643, 128.487830)
+    arrival = (35.818792, 128.538491)
 
     waypoints = get_waypoints(departure, arrival)
 
     for idx, point in enumerate(waypoints):
-        print("({idx}, 300, {lat}, {lon}, '2025-05-25 14:{min:02d}:{sec:02d}', DSBK001), ".format(idx = idx+1, lat = point[0], lon = point[1], min = idx // 12, sec = idx * 5 % 60))
+        print("({idx}, 300, {lat}, {lon}, '2025-05-25 14:{min:02d}:{sec:02d}', DSDS002), ".format(idx = idx+1,
+                                                                                                  lat = point[0],
+                                                                                                  lon = point[1],
+                                                                                                  min = idx // 12,
+                                                                                                  sec = idx * 5 % 60))
+        
         # make_UAM_ADSB_JSON(
         #     idx = str(idx),
         #     uamIdentification = "BKDG001",
